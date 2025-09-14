@@ -62,7 +62,7 @@ function App() {
 
 
 
-        </Route>
+      </Route>
 
 
       <Route path="/employee-dashboard" 

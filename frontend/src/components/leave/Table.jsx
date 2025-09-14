@@ -86,7 +86,7 @@ const Table = () => {
         <DataTable columns={columns} data={filteredLeaves} pagination />
         </div>
     </div>
-    ) :  <div>Loading....</div>}
+    ) :   <div>Loading....</div>}
     </>
   )
 }
