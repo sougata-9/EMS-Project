@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import DataTable from 'react-data-table-component'
 import { columns } from '../../utils/LeaveHelper'
 import axios from 'axios'
+import { LeaveButtons } from '../../utils/LeaveHelper'// added v12
 
 const Table = () => {
 
-    const [leaves, setLeaves] = useState(null)
+    const [leaves, setLeaves] = useState([])
     const [filteredLeaves, setFilteredLeaves] = useState(null)
     const fetchLeaves = async () => {
         try {
