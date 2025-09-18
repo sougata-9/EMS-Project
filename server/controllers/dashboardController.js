@@ -28,7 +28,7 @@ const getSummary = async (req, res) => {
             pending: leaveStatus.find(item => item._id === "Pending") ?.count || 0,
         }
 
-        returnres.status(200).json({
+        return res.status(200).json({
             success: true,
             totalEmployees,
             totalDepartments,
