@@ -15,7 +15,7 @@ const AttendanceReport = () => {
   const fetchReport = async () => {
     try {
       setLoading(true)
-      const query = URLSearchParams({limit, skip});
+      const query = new URLSearchParams({limit, skip});    // new added 
       if(dateFilter) {
         query.append('date', dateFilter)
       }
