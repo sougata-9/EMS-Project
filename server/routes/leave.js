@@ -9,7 +9,7 @@ router.post('/add', authMiddleware, addLeave)
 router.get('/detail/:id', authMiddleware, getLeaveDetail)
 router.get('/:id/:role', authMiddleware, getLeave)
 router.get('/' , authMiddleware, getLeaves)
-router.put('/:id', authMiddleware, getLeave, updateLeave)
+router.put('/:id', authMiddleware,  updateLeave)     //remove getLeave,    from the mid 
 
 
 export default router
