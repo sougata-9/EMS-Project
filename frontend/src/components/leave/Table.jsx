@@ -67,17 +67,32 @@ const Table = () => {
             <input 
             type="text"
             placeholder='Search By Emp Id'
-            className='px-4 py-0.5 border'
+            className='px-4 py-0.5 border
+            rounded
+          hover:border-gray-400 
+            transition duration-300 ease-in-out'
             onChange={filterByInput}
             />
             <div className='space-x-3'>
-            <button className="px-2 py-1 bg-teal-600 text-whitehover:bg-teal-700"
+            <button className="px-2 py-1 bg-yellow-500 text-white 
+            hover:bg-yellow-600
+            rounded-md
+            transition duration-300 ease-in-out 
+             hover:scale-105"
             onClick={() => filterByButton("Pending")}
             >Pending</button>
-            <button className="px-2 py-1 bg-teal-600 text-whitehover:bg-teal-700"
+            <button className="px-2 py-1 bg-green-600 text-white 
+            hover:bg-green-700
+            rounded-md
+            transition duration-300 ease-in-out 
+             hover:scale-105"
             onClick={() => filterByButton("Approved")}
             >Approved</button>
-            <button className="px-2 py-1 bg-teal-600 text-whitehover:bg-teal-700"
+            <button className="px-2 py-1 bg-red-600 text-white 
+            hover:bg-red-700
+            rounded-md
+            transition duration-300 ease-in-out 
+             hover:scale-105"
             onClick={() => filterByButton("Rejected")}
             >Rejected</button>
             </div>
