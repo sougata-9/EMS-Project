@@ -37,7 +37,7 @@ const AdminSummary = () => {
         <SummaryCard icon={<FaRupeeSign />} text="Monthly Salary" number={summary.totalSalary} color="bg-blue-500 rounded-md" />
       </div>
       <div className='mt-12'>
-        <h4 className='text-center text-2xl font-bold'>Leave Details</h4>
+        <h4 className=' text-2xl font-bold'>Leave Details</h4>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
           <SummaryCard icon={<FaFileAlt />} text="Leave Appiled" number={summary.leaveSummary.appliedFor} color="bg-teal-600 rounded-md" />
