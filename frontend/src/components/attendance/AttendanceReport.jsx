@@ -79,7 +79,7 @@ const AttendanceReport = () => {
                 <td>{i + 1}</td>
                 <td>{data.employeeId}</td>
                 <td>{data.employeeName}</td>
-                <td>{data.departmentName}</td>
+                <td>{data.department}</td>
                 <td>{data.status}</td>
               </tr>
           )) }

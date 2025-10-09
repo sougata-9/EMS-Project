@@ -46,7 +46,7 @@ const Add = () => {
             <div className='flex flex-col space-y-4'>
                 <div>
                     <label className='block text-sm font-medium text-gray-700'>
-                        Leave Types
+                        Choose Leave Types
                     </label>
                     <select 
                     name="leaveType"
@@ -54,7 +54,7 @@ const Add = () => {
                     className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
                     required
                     >
-                        {/* <option value="">select leave</option> */}
+                        <option value="">select leave</option>
                         <option value="Sick Leave">Sick Leave</option>
                         <option value="Casual Leave">Casual Leave</option>
                         <option value="Annual Leave">Annual Leave</option>
