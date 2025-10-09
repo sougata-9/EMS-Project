@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import {FaBuilding, FaCalendarAlt, FaCogs, FaMoneyBillWave, FaRegCalendarAlt, FaTachometerAlt, FaUsers} from 'react-icons/fa'
+import {FaBuilding, FaCalendarAlt, FaCogs, FaFile, FaFileAlt, FaMoneyBillWave, FaRegCalendarAlt, FaRegCalendarMinus, FaRupeeSign, FaTachometerAlt, FaUser, FaUserCog, FaUsers} from 'react-icons/fa'
 import { useAuth } from '../../context/authContext'
 const Sidebar = () => {
   const {user} = useAuth()
@@ -13,23 +13,23 @@ const Sidebar = () => {
             <NavLink to="/employee-dashboard" 
                 className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}
                 end>
-                <FaTachometerAlt />
+                <FaFileAlt />
                 <span>Dashboard</span>
             </NavLink>
              <NavLink to={`/employee-dashboard/profile/${user._id}`}
                 className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}
                 >
-                <FaUsers />
+                <FaUser />
                 <span>My Profile</span>
             </NavLink>
              <NavLink to={`/employee-dashboard/leaves/${user._id}`}
                    className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
-                <FaBuilding />
+                <FaRegCalendarMinus />
                 <span>Leaves</span>
             </NavLink>
              <NavLink to={`/employee-dashboard/salary/${user._id}`}
                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`} >
-                <FaCalendarAlt />
+                <FaRupeeSign />
                 <span>Salary</span>
             </NavLink>
              {/* <NavLink to={`/employee-dashboard/attendance/${user._id}`}
@@ -39,7 +39,7 @@ const Sidebar = () => {
             </NavLink> */}
              <NavLink to="/employee-dashboard/setting"
                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
-                <FaCogs />
+                <FaUserCog />
                 <span>Settings</span>
             </NavLink>
         </div>
