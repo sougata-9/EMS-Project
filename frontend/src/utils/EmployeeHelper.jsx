@@ -1,4 +1,5 @@
 import axios from "axios";
+import { FaEye, FaPencilAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export const columns = [
@@ -98,15 +99,37 @@ export const fetchDepartments = async () => {
     //id change to Id
     return (
         <div className="flex space-x-3">
-            <button className="px-3 py-1 bg-teal-600 text-white" onClick={() => navigate(`/admin-dashboard/employees/${Id}`)}>View</button>  
-            <button className="px-3 py-1 bg-blue-600 text-white"
-            onClick={() => navigate(`/admin-dashboard/employees/edit/${Id}`)}
-            
-            >Edit</button>
-            <button className="px-3 py-1 bg-yellow-600 text-white"
+            <button className="px-3 py-3 bg-teal-600
+             hover:bg-teal-700
+             text-white rounded-md
+             transition duration-300 ease-in-out 
+             hover:scale-105" onClick={() => navigate(`/admin-dashboard/employees/${Id}`)}>
+              <FaEye/>
+              {/* <span>View</span> */}
+              </button> 
+            <button className="px-3 py-3 bg-blue-600 
+            hover:bg-blue-800 
+            text-white rounded-md
+            transition duration-300 ease-in-out 
+             hover:scale-105"
+            onClick={() => navigate(`/admin-dashboard/employees/edit/${Id}`)}>
+               <FaPencilAlt/>
+              {/* <span>Edit</span> */}
+              </button>
+            <button className="px-3 py-3 bg-yellow-600 
+             hover:bg-yellow-700 
+             text-white rounded-md 
+             transition duration-300 ease-in-out 
+             hover:scale-105"
+
+             
             onClick={() => navigate(`/admin-dashboard/employees/salary/${Id}`)}
             >Salary</button>
-            <button className="px-3 py-1 bg-red-600 text-white"
+            <button className="px-3 py-3 bg-red-600 
+            hover:bg-red-700 
+            text-white rounded-md
+            transition duration-300 ease-in-out 
+             hover:scale-105"
             onClick={() => navigate(`/admin-dashboard/employees/leaves/${Id}`)}
             >Leave</button>
         </div>

@@ -66,12 +66,19 @@ const List = () => {
         <input 
         type="text"
          placeholder='Search By Emp Name'
-          className='px-4 py-0.5 border'
+          className='px-4 py-0.5 border
+          rounded
+          hover:border-gray-400 
+            transition duration-300 ease-in-out'
           onChange={handleFilter} 
         />
         <Link 
         to="/admin-dashboard/add-employee"
-         className='px-4 py-1 bg-teal-600 rounded text-white'>
+         className='px-4 py-1 bg-teal-600 
+         rounded text-white
+         hover:bg-teal-700
+         transition duration-300 ease-in-out 
+             hover:scale-105'>
             Add New Employee
             </Link>
       </div>

@@ -96,7 +96,10 @@ const Edit = () => {
             value={employee.name} 
             onChange={handleChange}
             placeholder='Insert Name'
-            className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
+            className='mt-1 p-2 block w-full border border-gray-300 
+            rounded-md
+            hover:border-green-500 
+            transition duration-300 ease-in-out'
             required
              />
           </div>
@@ -115,7 +118,10 @@ const Edit = () => {
              onChange={handleChange}
              value={employee.maritalStatus}
             placeholder='Marital Status'
-            className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
+            className='mt-1 p-2 block w-full border border-gray-300 
+            rounded-md
+            hover:border-green-500 
+            transition duration-300 ease-in-out'
             required
             >
               <option value="">Select Status</option>
@@ -135,7 +141,10 @@ const Edit = () => {
             onChange={handleChange}
             value={employee.designation}
             placeholder='Designation'
-            className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
+            className='mt-1 p-2 block w-full border border-gray-300 
+            rounded-md
+            hover:border-green-500 
+            transition duration-300 ease-in-out'
             required
             />
           </div>
@@ -153,7 +162,10 @@ const Edit = () => {
             onChange={handleChange}
             value={employee.salary}
             placeholder='Salary'
-            className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
+            className='mt-1 p-2 block w-full border border-gray-300 
+            rounded-md
+            hover:border-green-500 
+            transition duration-300 ease-in-out'
             required
             />
           </div>
@@ -168,7 +180,10 @@ const Edit = () => {
             name='department'
             onChange={handleChange}
             value={employee.department}
-            className='mt-1 p-2 block w-full border border-gray-300 rounded-md'
+            className='mt-1 p-2 block w-full border border-gray-300 
+            rounded-md
+            hover:border-green-500 
+            transition duration-300 ease-in-out'
             required
             >
               <option value="">Select Department</option>
@@ -182,7 +197,12 @@ const Edit = () => {
 
         <button 
         type='submit'
-        className='w-full mt-6 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md'
+        className='w-full mt-6 bg-teal-600 
+        hover:bg-teal-700 
+        text-white font-bold py-2 px-4 
+        rounded-md
+        transition duration-300 ease-in-out 
+        hover:scale-105'
         >
           Update Employee
         </button>
