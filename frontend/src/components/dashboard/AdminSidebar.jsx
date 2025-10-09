@@ -9,44 +9,76 @@ const AdminSidebar = () => {
         </div>
         <div className='px-4'>
             <NavLink to="/admin-dashboard" 
-                className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}
+                className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                flex items-center space-x-4 block py-2.5 px-4 
+                rounded
+                transition duration-300 ease-in-out 
+                hover:scale-105`}
                 end>
                 <FaTachometerAlt />
                 <span>Dashboard</span>
             </NavLink>
              <NavLink to="/admin-dashboard/employees"
-                className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}
+                className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                flex items-center space-x-4 block py-2.5 px-4 
+                rounded
+                transition duration-300 ease-in-out 
+                hover:scale-105`}
                 >
                 <FaUsers />
                 <span>Employee</span>
             </NavLink>
              <NavLink to="/admin-dashboard/departments"
-                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                   flex items-center space-x-4 block py-2.5 px-4 
+                   rounded
+                   transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaBuilding />
                 <span>Departments</span>
             </NavLink>
              <NavLink to="/admin-dashboard/leaves"
-                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                   className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                   flex items-center space-x-4 block py-2.5 px-4 
+                   rounded
+                   transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaRegCalendarMinus />
                 <span>Leaves</span>
             </NavLink>
              <NavLink to="/admin-dashboard/salary/add"
-                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                  flex items-center space-x-4 block py-2.5 px-4 
+                  rounded
+                  transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaRupeeSign />
                 <span>Salary</span>
             </NavLink>
              <NavLink to="/admin-dashboard/attendance"
-                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                  flex items-center space-x-4 block py-2.5 px-4 
+                  rounded
+                  transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaRegCalendarAlt />
                 <span>Attendance</span>
             </NavLink>
              <NavLink to="/admin-dashboard/attendance-report"
-                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                  flex items-center space-x-4 block py-2.5 px-4 
+                  rounded
+                  transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaFileAlt  />
                 <span>Attendance Report</span>
             </NavLink>
              <NavLink to="/admin-dashboard/setting"
-                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} flex items-center space-x-4 block py-2.5 px-4 rounded`}>
+                  className={({isActive}) => `${isActive ? "bg-teal-500" : " "} 
+                  flex items-center space-x-4 block py-2.5 px-4 
+                  rounded
+                  transition duration-300 ease-in-out 
+                   hover:scale-105`}>
                 <FaUserCog />
                 <span>Settings</span>
             </NavLink>
