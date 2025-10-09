@@ -55,7 +55,9 @@ const View =() => {
                     <input 
                     type="text"
                     placeholder="Search By Emp ID"
-                    className="border px-2 rounded-md py-0.5 border-gray-300"
+                    className="border px-2 rounded-md py-0.5 border-gray-300
+                    hover:border-gray-400 
+                    transition duration-300 ease-in-out"
                     onChange={filterSalaries}
                     />
                 </div>

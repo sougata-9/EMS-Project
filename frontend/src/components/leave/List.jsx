@@ -48,7 +48,10 @@ const List = () => {
             <input 
             type="text"
             placeholder='Search By Dep Name'
-            className='px-4 py-0.5 border'
+            className='px-4 py-0.5 border
+            rounded
+            hover:border-gray-400 
+            transition duration-300 ease-in-out'
             />
             {user.role === "employee" && (
             <Link

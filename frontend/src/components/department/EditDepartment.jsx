@@ -67,7 +67,12 @@ const EditDepartment = () => {
                     <input type="text" name='dep_name'
                      onChange={handleChange}
                      value={department.dep_name}
-                    placeholder='Department Name' className='mt-1 w-full p-2 border border-gray-300 rounded-md' required />
+                    placeholder='Department Name' 
+                    className='mt-1 w-full p-2 border border-gray-300 
+                    rounded-md
+                    hover:border-green-500 
+                    transition duration-300 ease-in-out' 
+                    required />
                 </div>
 
                 <div className='mt-3'>
@@ -75,9 +80,22 @@ const EditDepartment = () => {
                     <textarea name="description"
                      onChange={handleChange}
                      value={department.description}
-                    placeholder='Description' className='mt-1 p-2 block w-full border border-gray-300 rounded-md ' rows="4"></textarea>
+                    placeholder='Description' 
+                    className='mt-1 p-2 block w-full border border-gray-300 
+                    rounded-md 
+                    hover:border-green-500 
+                    transition duration-300 ease-in-out' 
+            rows="4"></textarea>
                 </div>
-                <button type='submit' className='w-full mt-6 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded'>Edit Department</button>
+                <button type='submit' 
+                className='w-full mt-6 bg-teal-600 
+                hover:bg-teal-700 
+                text-white font-bold py-2 px-4 
+                rounded
+                transition duration-300 ease-in-out 
+                hover:scale-105'>
+                  Edit Department
+                  </button>
             </form>
         </div>
         }</>

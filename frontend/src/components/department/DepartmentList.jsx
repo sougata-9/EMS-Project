@@ -62,7 +62,12 @@ const fetchDepartments = async () => {
         <h3 className='text-2xl font-bold'>Manage Departments</h3>
       </div>
       <div className='flex justify-between items-center'>
-        <input type="text" placeholder='Search By Dept Name' className='px-4 py-0.5 border' onChange={filterDepartments}/>
+        <input type="text" placeholder='Search By Dept Name' 
+        className='px-4 py-0.5 border
+        rounded
+        hover:border-gray-400 
+        transition duration-300 ease-in-out' 
+        onChange={filterDepartments}/>
         <Link to="/admin-dashboard/add-department" 
         className='px-4 py-1 bg-teal-600 
         rounded text-white
