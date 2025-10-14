@@ -40,6 +40,7 @@ import { useParams } from 'react-router-dom'
                 <div>
                     <img
                         src={`http://localhost:5000/${employee.userId.profileImage}`}
+                        alt={`${employee.userId.name}'s profile`}
                         className="rounded-full border w-72"
                     />
 
