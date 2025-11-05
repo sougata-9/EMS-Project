@@ -116,7 +116,7 @@ const Login = () => {
                 {/* === Login Button === */}
                 <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-teal-400 to-blue-600 text-white py-3 rounded-xl font-bold text-lg
+                    className="w-full bg-gradient-to-r from-teal-400 to-blue-700 text-white py-3 rounded-xl font-bold text-lg
                                shadow-lg hover:shadow-2xl transition duration-300 ease-in-out 
                                transform hover:scale-[1.03] active:scale-[0.98] 
                                focus:outline-none focus:ring-4 focus:ring-pink-400 focus:ring-opacity-50"
