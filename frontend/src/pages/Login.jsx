@@ -2,10 +2,12 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useAuth } from '../context/authContext'
 import { useNavigate } from 'react-router-dom'
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 const Login = () => {
    const [email, setEmail] = useState("")
    const [password, setPassword] = useState("")
+   const [showPassword, setShowPassword] = useState(false)
    const [error, setError] = useState(null)
    const {login} = useAuth()
    const navigate = useNavigate()
@@ -84,12 +86,12 @@ const Login = () => {
                 </div>
 
                 {/* === Password Field === */}
-                <div className="mb-4">
+                <div className="mb-4 relative">
                     <label htmlFor="password" className="block text-sm font-bold text-gray-200 mb-2">Password</label>
                     <input
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         id="password"
-                        className="w-full px-5 py-3 border border-white border-opacity-30 rounded-xl 
+                        className="w-full px-5 pr-10 py-3 border border-white border-opacity-30 rounded-xl 
                                    bg-white bg-opacity-20 text-white placeholder-gray-300
                                    focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500
                                    transition duration-300 ease-in-out"
@@ -97,6 +99,13 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
+                    <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white transition duration-200"
+                    >
+                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </button>
                 </div>
 
                 {/* === Remember Me & Forgot Password === */}
