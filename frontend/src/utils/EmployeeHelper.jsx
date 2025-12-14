@@ -35,6 +35,13 @@ export const columns = [
         center: true
     },
     {
+        name: "Designation",
+        selector: (row) => row.designation,
+        sortable: true,
+        width: "130px",
+        center: true
+    },
+    {
         name: "Action",
         selector: (row) => row.action,
         center: true

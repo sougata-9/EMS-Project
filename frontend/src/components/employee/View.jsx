@@ -65,6 +65,11 @@ import { useParams } from 'react-router-dom'
                     </div>
 
                     <div className="flex space-x-3 mb-5">
+                        <p className="text-lg font-bold">Designation:</p>
+                        <p className="font-medium">{employee.designation}</p>
+                    </div>
+
+                    <div className="flex space-x-3 mb-5">
                         <p className="text-lg font-bold">Gender:</p>
                         <p className="font-medium">{employee.gender}</p>
                     </div>
